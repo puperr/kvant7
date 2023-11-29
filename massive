@@ -1,0 +1,72 @@
+"use strict"
+//let ar = [100,200,300,400];
+//console.lof(ar)
+let names = [
+    'Ivan',
+    'Artem',
+    'Ruslan',
+    'Olga',
+    'Inna',
+];
+names[names.length]= 'David';
+
+
+//поломка массива
+// names[12] = 'Misha';
+
+// names.someValue = 'someValue';
+//let names2 = [...names]; починка массива
+//names[3] // получение по ключу
+// console.log(names[names.length - 1]); //получение последнего элемента
+// console.log(names.flat(-1)); //новый метод получениея последнего элемента
+let matrix = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+
+];
+//console.log(matrix[1][1]);
+//let str1 = names.join(';'); //сипаратор // JSON.stringify(names) 
+//let str2 = String(names);
+// console.log(str1.split(';'));
+// console.log(str2.split(','))
+// console.log([] + 1);
+// console.log([...[1,2],...[3,4]]);
+// console.log([1,2].concat([4,3]));
+// for ... in
+// forr ... Off
+// for(let i =);
+if(names instanceof Array)
+names.forEach(item => {
+
+});
+//pop/push shift/unshift
+//console.log(names);
+names.push('Rita','Margarita','Pavel');
+names.unshift('Sveta','Lada')
+// console.log(names);
+ //names.length(5);
+// console.log(names)
+//names.length(12);
+names.fill('Bogdan',5 );//заполнить с 5 строки
+names.fill('Bogdan',5 , 8); //с 5-8
+//names.fill('Bogdan',5 ,100 );
+// const ar = Array(100).fill('Bogdan');
+// ar[0].hi = 'ALL';
+// console.log(ar)
+// let names2 = names;
+// let names3 = [...names];
+let bigName  = names.filter(name => name.length > 4 );//найти все элементы
+let someArray = [];
+names.forEach(name => {
+    if(name.length >4)
+    someArray.push(name)
+});
+let nameA = names.find(name => name.length >3) // найти 1 элемент || 
+//findindex
+//findlastindex
+//findlast
+let numbers = [3,2,6,15,23];
+let root = numbers.map(Math,sqrt);
+console.log(numbers)
+console.log(root)
